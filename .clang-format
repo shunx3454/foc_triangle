@@ -1,0 +1,38 @@
+# This is a .clang-format configuration file used to define coding style rules for C++ projects.
+#
+# - BasedOnStyle: Specifies the base style to use as a starting point. Here, 'LLVM' is used.
+# - IndentWidth: Sets the number of spaces for each indentation level (4 spaces in this case).
+# - TabWidth: Defines the width of a tab character (4 spaces here).
+# - UseTab: Determines whether to use tabs for indentation. 'Never' means spaces are always used.
+# - BreakBeforeBraces: Configures the placement of braces. 'Allman' style places braces on a new line.
+# - AllowShortFunctionsOnASingleLine: Allows short functions to be written on a single line if they are empty.
+# - ColumnLimit: Sets the maximum line length (120 characters here).
+# - PointerAlignment: Specifies the alignment of pointer symbols. 'Left' aligns pointers with the type.
+# - SpacesInParentheses: Controls whether spaces are added inside parentheses. 'false' disables this.
+# - SpaceAfterCStyleCast: Adds a space after C-style casts if set to true.
+# - Cpp11BracedListStyle: Enforces consistent formatting for C++11 braced initializer lists.
+# - IncludeBlocks: Determines how include directives are grouped. 'Preserve' keeps the original grouping.
+# - SortIncludes: Enables sorting of include directives alphabetically.
+# - IndentCaseLabels: Ensures case labels in switch statements are indented.
+# - AlignConsecutiveAssignments: Aligns consecutive assignment statements for better readability.
+# - AlignConsecutiveDeclarations: Aligns consecutive declarations for better readability.
+# - ReflowComments: Reformats comments to fit within the specified column limit.
+# .clang-format configuration file
+
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: Empty
+ColumnLimit: 120
+PointerAlignment: Left
+SpacesInParentheses: false
+SpaceAfterCStyleCast: true
+Cpp11BracedListStyle: true
+IncludeBlocks: Preserve
+SortIncludes: true
+IndentCaseLabels: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+ReflowComments: true

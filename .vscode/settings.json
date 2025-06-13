@@ -1,0 +1,22 @@
+{
+    "cortex-debug.openocdPath": "${env:LOCALAPPDATA}\\Programs\\AT32IDE\\OpenOCD\\bin\\openocd.exe",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "led.h": "c",
+        "at32f403a_407.h": "c",
+        "spi.h": "c",
+        "icm42688p.h": "c",
+        "at32f403a_407_clock.h": "c",
+        "cstdint": "c",
+        "cmath": "c",
+        "compare": "c",
+        "tmr.h": "c",
+        "mahonyahrs.h": "c",
+        "pid.h": "c",
+        "math.h": "c",
+        "arm_math.h": "c",
+        "arm_math_types.h": "c",
+        "basic_math_functions.h": "c"
+    },
+}

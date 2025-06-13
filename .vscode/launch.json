@@ -1,0 +1,23 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https:/go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/FOC_Triangle.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "${workspaceFolder}/AT32F403A.cfg",
+            ],
+            "svdFile": "${workspaceFolder}/AT32F403Axx_v2.svd",
+            "runToEntryPoint": "main",
+            "armToolchainPath": "${env:LOCALAPPDATA}/Programs/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin",
+            "gdbPath": "${env:LOCALAPPDATA}/Programs/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+        }
+    ]
+}

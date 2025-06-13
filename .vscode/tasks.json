@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "Ninja",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            }
+        },
+        {
+            "label": "download",
+            "type": "shell",
+            "command": "${env:LOCALAPPDATA}\\Programs\\AT32IDE\\OpenOCD\\bin\\openocd.exe",
+            "args": [
+                "-f",
+                "${workspaceFolder}/AT32F403A.cfg",
+                "-c",
+                "program build/FOC_Triangle.elf verify reset exit"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn" :[
+                "build"
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "Ninja clean",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            }
+        },
+    ]
+}
